@@ -5,6 +5,6 @@ service_sdk::macros::use_my_no_sql_entity!();
 #[derive(Serialize, Deserialize, Clone)]
 pub struct CopyTradingGroupModel {
     pub name: String,
-    pub subscriber_commission: f64,
-    pub provider_commission: f64,
+    pub commission_to_provider: f64,
+    pub commission_to_ct_service: f64,
 }
